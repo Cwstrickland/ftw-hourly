@@ -22,3 +22,6 @@ export { default as StyleguidePage } from './StyleguidePage/StyleguidePage';
 export { default as TermsOfServicePage } from './TermsOfServicePage/TermsOfServicePage';
 export { default as TopbarContainer } from './TopbarContainer/TopbarContainer';
 export { default as TransactionPage } from './TransactionPage/TransactionPage';
+
+// Custom pages for JaegerCo
+export { default as FAQPage } from './FAQPage/FAQPage';
