@@ -92,11 +92,11 @@ export const filters = [
     config: {},
   },
   {
-    id: 'yogaStyles',
-    label: 'Yoga styles',
+    id: 'salesChannel',
+    label: 'Sales Channel',
     type: 'SelectMultipleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_yogaStyles'],
+    group: 'primary',
+    queryParamNames: ['salesChannel'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
@@ -107,30 +107,50 @@ export const filters = [
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'ashtanga', label: 'Ashtanga' },
-        { key: 'hatha', label: 'Hatha' },
-        { key: 'kundalini', label: 'Kundalini' },
-        { key: 'restorative', label: 'Restorative' },
-        { key: 'vinyasa', label: 'Vinyasa' },
-        { key: 'yin', label: 'Yin' },
+        { key: 'phone', label: 'Phone' },
+        { key: 'email', label: 'E-Mail' },
+        { key: 'chat', label: 'Chat' },
+        { key: 'inPerson', label: 'In-Person' },
       ],
     },
-  },
+  }, 
   {
-    id: 'certificate',
-    label: 'Certificate',
+    id: 'industryFocus',
+    label: 'Industry Focus',
     type: 'SelectSingleFilter',
-    group: 'secondary',
-    queryParamNames: ['pub_certificate'],
+    group: 'primary',
+    queryParamNames: ['industryFocus'],
     config: {
       // "key" is the option you see in Flex Console.
       // "label" is set here for the UI only.
       // Note: label is not added through the translation files
       // to make filter customizations a bit easier.
       options: [
-        { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true },
-        { key: '200h', label: 'Registered yoga teacher 200h' },
-        { key: '500h', label: 'Registered yoga teacher 500h' },
+        // to-do need more options here
+        { key: 'retail', label: 'Retail Sales' },
+        { key: 'b2b', label: 'Business to Business' },
+        { key: 'b2c', label: 'Business to Customer' },
+        { key: 'other', label: 'Other' },
+      ],
+    },
+  },
+  {
+    id: 'exampleFilter',
+    label: 'Example Filter',
+    type: 'SelectSingleFilter',
+    group: 'secondary',
+    queryParamNames: ['exampleFilter'],
+    config: {
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        // { key: 'none', label: 'None', hideFromFilters: true, hideFromListingInfo: true }, commenting out as an example
+        { key: '1', label: 'Example 1' },
+        { key: '2', label: 'Example 2' },
+        { key: '3', label: 'Example 3' },
+        { key: '4', label: 'Example 4' },
       ],
     },
   },
