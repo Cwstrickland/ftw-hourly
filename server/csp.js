@@ -90,7 +90,7 @@ module.exports = (reportUri, enforceSsl, reportOnly) => {
   // Add custom CSP whitelisted URLs here. See commented example
   // below. For format specs and examples, see:
   // https://content-security-policy.com/
-  https://www.googletagmanager.com
+ 
 
   // Example: extend default img directive with custom domain
   // const { imgSrc = [self] } = defaultDirectives;
