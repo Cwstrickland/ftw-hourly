@@ -29,6 +29,9 @@ const defaultDirectives = {
     'www.google-analytics.com',
     'stats.g.doubleclick.net',
 
+    //Tag Manager
+    'www.googletagmanager.com',
+
     'sentry.io',
     '*.stripe.com',
   ],
