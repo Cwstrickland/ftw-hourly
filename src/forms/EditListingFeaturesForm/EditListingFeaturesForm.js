@@ -49,13 +49,26 @@ const EditListingFeaturesFormComponent = props => (
         </p>
       ) : null;
 
-      const options = findOptionsForSelectFilter('industryFocus', filterConfig);
+      const options = findOptionsForSelectFilter('salesChannel', filterConfig);
+
+      const focusKey = 'industryFocus';
+      const focusOptions = findOptionsForSelectFilter( focusKey, filterConfig);
+
+
       return (
         <Form className={classes} onSubmit={handleSubmit}>
           {errorMessage}
           {errorMessageShowListing}
 
-          <FieldCheckboxGroup className={css.features} id={name} name={name} options={options} label="Industry Focus"/>
+          <FieldSelect className={css.features} id={focusKey} name={focusKey} label={"Industry Focus"}>
+            {focusOptions.map(o => (
+              <option key={o.key} value={o.key}> 
+                {o.label}
+              </option>
+            ))}
+          </FieldSelect>
+
+          <FieldCheckboxGroup className={css.features} id={name} name={name} options={options} label="Sales Channels"/>
 
           <Button
             className={css.submitButton}

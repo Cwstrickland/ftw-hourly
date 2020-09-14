@@ -48,8 +48,8 @@ const EditListingFeaturesPanel = props => {
   );
 
   const industryFocus = publicData && publicData.industryFocus;
-  const focus = publicData && publicData.focus;
-  const initialValues = { industryFocus };
+  const salesChannel = publicData && publicData.salesChannel;
+  const initialValues = { industryFocus, salesChannel };
 
   return (
     <div className={classes}>
@@ -59,10 +59,10 @@ const EditListingFeaturesPanel = props => {
         name={FEATURES_NAME}
         initialValues={initialValues}
         onSubmit={values => {
-          const { industryFocus = [], focus = '' } = values;
+          const { industryFocus = [], salesChannel = [] } = values;
 
           const updatedValues = {
-            publicData: { industryFocus, focus },
+            publicData: { industryFocus, salesChannel},
           };
           onSubmit(updatedValues);
         }}
