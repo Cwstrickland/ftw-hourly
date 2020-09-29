@@ -49,7 +49,7 @@ const EditListingFeaturesFormComponent = props => (
         </p>
       ) : null;
 
-      const options = findOptionsForSelectFilter('salesChannel', filterConfig);
+      const options = findOptionsForSelectFilter('salesMedium', filterConfig);
 
       const focusKey = 'industryFocus';
       const focusOptions = findOptionsForSelectFilter( focusKey, filterConfig);

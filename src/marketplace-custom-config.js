@@ -92,11 +92,11 @@ export const filters = [
     config: {},
   },
   {
-    id: 'salesChannel',
-    label: 'Sales Channel',
+    id: 'salesMedium',
+    label: 'Medium',
     type: 'SelectMultipleFilter',
     group: 'primary',
-    queryParamNames: ['salesChannel'],
+    queryParamNames: ['salesMedium'],
     config: {
       // Optional modes: 'has_all', 'has_any'
       // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
@@ -113,7 +113,33 @@ export const filters = [
         { key: 'inPerson', label: 'In-Person' },
       ],
     },
-  }, 
+  },
+  {
+    id: 'salesRole',
+    label: 'Role',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['salesRole'],
+    config: {
+      // Optional modes: 'has_all', 'has_any'
+      // https://www.sharetribe.com/api-reference/marketplace.html#extended-data-filtering
+      searchMode: 'has_all',
+
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for this web app's UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        { key: 'inside', label: 'Inside sales' },
+        { key: 'outside', label: 'Outside Sales' },
+        { key: 'support', label: 'Sales Support' },
+        { key: 'client', label: 'Client Services' },
+        { key: 'lead', label: 'Lead Generation' },
+        { key: 'bisdev', label: 'Business Dev Managers' },
+        { key: 'account', label: 'Account Managers' },
+      ],
+    },
+  },  
   {
     id: 'industryFocus',
     label: 'Industry Focus',
