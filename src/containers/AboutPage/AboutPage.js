@@ -12,7 +12,7 @@ import {
 } from '../../components';
 
 import css from './AboutPage.css';
-import image from './about-us-1056.jpg';
+import image from './sales laptop reports.jpg';
 
 const AboutPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
@@ -35,35 +35,31 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Find new depths in your yoga practice</h1>
+          <h1 className={css.pageTitle}>Doing sales on your own terms.</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
             <div className={css.contentSide}>
-              <p>Yoga was listed by UNESCO as an intangible cultural heritage.</p>
+              <p>You need a skilled sales hunter… You need a Jaeger.</p>
             </div>
 
             <div className={css.contentMain}>
               <h2>
-                Each yoga practitioner is an individual, and each one of us needs different care.
-                Working together with an experienced yoga teacher offers the possibility to rise
-                our practise to a whole new level.
+              In a world where your career is increasingly out of your control, The Jaeger Co is the option for professional salesmen to take that control back. Work how often, how much, and for whom you want. Diversify your revenue streams, and secure your future.
               </h2>
 
               <p>
-                Whether it is the alignment of asanas or being able to set the focus of the class,
-                we all have our own struggles and goals. Some of these cannot be addressed in a
-                regular class of twenty yogis. Working together with the experienced yoga teachers
-                from Yogatime, you can together create just the right class for you.
+              If you have been unceremoniously shown the door after years of loyalty to your company, then you belong here with us. The Jaeger Co is your second chance where you have the freedom to continue your career on your terms. No longer is your career in the hands of anyone but yourself. Forge your own path, diversify your opportunities, and secure your future.
+              </p>
+              <p>
+                The greatest cliché that modern business executives say is “people are our greatest asset”. Proof that this is just lip service is that as soon as cost savings is implemented in a company, its employee layoffs or pay cuts are their first option. They don’t care about you; only their profits.
               </p>
 
-              <h3 className={css.subtitle}>Are you a yoga teacher?</h3>
+              <h3 className={css.subtitle}>Are you a business looking for a Jaeger?</h3>
 
               <p>
-                Yogatime offers you a platform through which you can reach thousands of yoga
-                practitioners. Offering private yoga classes through Yogatime offers you a
-                possibility to grow your customer base and earn some extra income on top of your
-                regular classes.
+              No longer be tied to a single salesman during lean times of the sales cycle. Hire Jeagers only when you need them. Relieve strain on your payroll when you don’t.
+
               </p>
 
               <h3 id="contact" className={css.subtitle}>
