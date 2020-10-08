@@ -35,7 +35,7 @@ const AboutPage = () => {
         </LayoutWrapperTopbar>
 
         <LayoutWrapperMain className={css.staticPageWrapper}>
-          <h1 className={css.pageTitle}>Doing sales on your own terms.</h1>
+          <h1 className={css.pageTitle}>What is a Jaeger?</h1>
           <img className={css.coverImage} src={image} alt="My first ice cream." />
 
           <div className={css.contentWrapper}>
@@ -44,15 +44,18 @@ const AboutPage = () => {
             </div>
 
             <div className={css.contentMain}>
+              <p><i>The dictionary definition for Jaeger is a hunter or huntsman. This is a person who hunts game, or searches for something. In the business world, this would be analogous to the sales staff of a company. At The Jaeger Co, a Jaeger is one of our professional salesmen or saleswomen who hunt opportunities for a contracting business.
+              </i></p>
               <h2>
               In a world where your career is increasingly out of your control, The Jaeger Co is the option for professional salesmen to take that control back. Work how often, how much, and for whom you want. Diversify your revenue streams, and secure your future.
+
               </h2>
 
               <p>
-              If you have been unceremoniously shown the door after years of loyalty to your company, then you belong here with us. The Jaeger Co is your second chance where you have the freedom to continue your career on your terms. No longer is your career in the hands of anyone but yourself. Forge your own path, diversify your opportunities, and secure your future.
-              </p>
-              <p>
-                The greatest cliché that modern business executives say is “people are our greatest asset”. Proof that this is just lip service is that as soon as cost savings is implemented in a company, its employee layoffs or pay cuts are their first option. They don’t care about you; only their profits.
+              streams, and secure your future
+              If you have been unceremoniously shown the door after years of loyalty to your company, then you belong here with us. If you are fresh out of school and cannot get your career started in any meaningful way, then you belong with us. If you simply want to improve your financial opportunities for yourself and your family, you belong with us. The Jaeger Co is your best chance for you to have the freedom to cultivate your career on your terms. No longer is your career in the hands of anyone but yourself. Forge your own path, diversify your opportunities, and secure your future.</p>
+              <p>The greatest cliché that modern business executives say is “people are our greatest asset”. Evidence that saying is just lip service is that as soon as cost savings is implemented in a company, its employee layoffs or pay cuts are their first option. They don’t care about you; only their profits. With The Jaeger Co, we want to change this relationship by opening up an underutilized segment of business opportunities the Jaeger can utilize to take control of their own careers.
+
               </p>
 
               <h3 className={css.subtitle}>Are you a business looking for a Jaeger?</h3>
