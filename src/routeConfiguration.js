@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AboutPage,
   AuthenticationPage,
+  Businesses,
   CheckoutPage,
   ContactDetailsPage,
   EditListingPage,
@@ -68,6 +69,11 @@ const routeConfiguration = () => {
       path: '/jaegers',
       name: 'Jaegers',
       component: Jaegers,
+    },
+    {
+      path: '/businesses',
+      name: 'Businesses',
+      component: Businesses,
     },
     {
       path: '/about',
