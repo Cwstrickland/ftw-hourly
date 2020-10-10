@@ -52,30 +52,20 @@ const AboutPage = () => {
               </h2>
 
               <p>
-              streams, and secure your future
-              If you have been unceremoniously shown the door after years of loyalty to your company, then you belong here with us. If you are fresh out of school and cannot get your career started in any meaningful way, then you belong with us. If you simply want to improve your financial opportunities for yourself and your family, you belong with us. The Jaeger Co is your best chance for you to have the freedom to cultivate your career on your terms. No longer is your career in the hands of anyone but yourself. Forge your own path, diversify your opportunities, and secure your future.</p>
-              <p>The greatest cliché that modern business executives say is “people are our greatest asset”. Evidence that saying is just lip service is that as soon as cost savings is implemented in a company, its employee layoffs or pay cuts are their first option. They don’t care about you; only their profits. With The Jaeger Co, we want to change this relationship by opening up an underutilized segment of business opportunities the Jaeger can utilize to take control of their own careers.
-
+              If you have been unceremoniously shown the door after years of loyalty to your company, then you belong here with us. If you are fresh out of school and cannot get your career started in any meaningful way, then you belong with us. If you simply want to improve your financial opportunities for yourself and your family, you belong with us. The Jaeger Co is your best chance for you to have the freedom to cultivate your career on your terms. No longer is your career in the hands of anyone but yourself. Forge your own path, diversify your opportunities, and secure your future.
+              </p>
+              <p>
+              The greatest cliché that modern business executives say is “people are our greatest asset”. Evidence that saying is just lip service is that as soon as cost savings is implemented in a company, its employee layoffs or pay cuts are their first option. They don’t care about you; only their profits. With The Jaeger Co, we want to change this relationship by opening up an underutilized segment of business opportunities the Jaeger can utilize to take control of their own careers.
               </p>
 
               <h3 className={css.subtitle}>Are you a business looking for a Jaeger?</h3>
 
               <p>
-              No longer be tied to a single salesman during lean times of the sales cycle. Hire Jeagers only when you need them. Relieve strain on your payroll when you don’t.
-
+              Does your small to medium sized business have sales opportunities that are being under explored? Many small businesses cannot afford to hire a full time sales staff to fully realize these opportunities. With The Jaeger Co, you now have the ability to contract with professional sales Jaegers to more fully realize those opportunities, and turn them into profits for your company. A sales staff for your company is no longer just reserved for the large corporations to utilize. Our Jaegers are salesmen and saleswomen on demand that can help even the playing field for small businesses against the much larger competitors in their industry. You have access to all the benefits of, but no longer must internally employ salesmen during lean times of the sales cycle, or when your payroll cannot afford it. Hire Jaegers when you need them, and relieve strain on your payroll when you don’t. You don’t need a salesman, you need a Jaeger.
               </p>
-
-              <h3 id="contact" className={css.subtitle}>
-                Create your own marketplace like Yogatime
-              </h3>
+              {/* Leaving this in for example link setup. to-do */}
               <p>
-                Yogatime is brought to you by{' '}
-                <ExternalLink href="http://sharetribe.com">Sharetribe</ExternalLink>. Sharetribe
-                offers anyone a possibility to create a marketplace without restricting your own
-                creativity. Do not hesitate to reach out and learn how to best turn your
-                marketplace idea to reality.
-              </p>
-              <p>
+              
                 You can also checkout our{' '}
                 <ExternalLink href={siteFacebookPage}>Facebook</ExternalLink> and{' '}
                 <ExternalLink href={siteTwitterPage}>Twitter</ExternalLink>.
