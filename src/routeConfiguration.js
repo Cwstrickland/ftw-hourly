@@ -8,6 +8,7 @@ import {
   EmailVerificationPage,
   FAQPage,
   InboxPage,
+  Jaegers,
   LandingPage,
   ListingPage,
   NotFoundPage,
@@ -62,6 +63,11 @@ const routeConfiguration = () => {
       path: '/faq',
       name: 'FAQPage',
       component: FAQPage,
+    },
+    {
+      path: '/jaegers',
+      name: 'Jaegers',
+      component: Jaegers,
     },
     {
       path: '/about',

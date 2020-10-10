@@ -25,3 +25,4 @@ export { default as TransactionPage } from './TransactionPage/TransactionPage';
 
 // Custom pages for JaegerCo
 export { default as FAQPage } from './FAQPage/FAQPage';
+export { default as Jaegers } from './Jaegers/Jaegers'; 

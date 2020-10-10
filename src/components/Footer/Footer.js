@@ -74,6 +74,8 @@ const Footer = props => {
                 <p className={css.organizationDescription}>
                   <FormattedMessage id="Footer.organizationDescription" />
                 </p>
+
+                {/* to-do fix copyright link */}
                 <p className={css.organizationCopyright}>
                   <NamedLink name="LandingPage" className={css.copyrightLink}>
                     <FormattedMessage id="Footer.copyright" />
@@ -91,6 +93,11 @@ const Footer = props => {
                 <li className={css.listItem}>
                   <NamedLink name="AboutPage" className={css.link}>
                     <FormattedMessage id="Footer.toAboutPage" />
+                  </NamedLink>
+                </li>
+                <li className={css.listItem}>
+                  <NamedLink name="Jaegers" className={css.link}>
+                    <FormattedMessage id="Footer.jaeger" />
                   </NamedLink>
                 </li>
                 <li className={css.listItem}>
