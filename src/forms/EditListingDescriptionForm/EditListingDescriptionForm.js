@@ -6,7 +6,7 @@ import { intlShape, injectIntl, FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
 import { propTypes } from '../../util/types';
 import { maxLength, required, composeValidators } from '../../util/validators';
-import { Form, Button, FieldTextInput } from '../../components';
+import { Form, Button, FieldTextInput, FieldSelect, } from '../../components';
 import CustomCertificateSelectFieldMaybe from './CustomCertificateSelectFieldMaybe';
 
 import css from './EditListingDescriptionForm.css';
@@ -18,7 +18,7 @@ const EditListingDescriptionFormComponent = props => (
     {...props}
     render={formRenderProps => {
       const {
-        certificateOptions,
+        salesRoleOptions,
         className,
         disabled,
         ready,
@@ -110,9 +110,9 @@ const EditListingDescriptionFormComponent = props => (
           />
 
           <CustomCertificateSelectFieldMaybe
-            id="certificate"
-            name="certificate"
-            certificateOptions={certificateOptions}
+            id="salesRole"
+            name="salesRole"
+            salesRoleOptions={salesRoleOptions}
             intl={intl}
           />
 
@@ -147,7 +147,7 @@ EditListingDescriptionFormComponent.propTypes = {
     showListingsError: propTypes.error,
     updateListingError: propTypes.error,
   }),
-  certificateOptions: arrayOf(
+  salesRoleOptions: arrayOf(
     shape({
       key: string.isRequired,
       label: string.isRequired,
