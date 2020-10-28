@@ -161,6 +161,26 @@ export const filters = [
     },
   },
   {
+    id: 'yearsExperiance',
+    label: 'Years Experiance',
+    type: 'SelectSingleFilter',
+    group: 'primary',
+    queryParamNames: ['yearsExperiance'],
+    config: {
+      // "key" is the option you see in Flex Console.
+      // "label" is set here for the UI only.
+      // Note: label is not added through the translation files
+      // to make filter customizations a bit easier.
+      options: [
+        // to-do need more options here
+        { key: '0-1', label: '0-1 Years' },
+        { key: '2-5', label: '2-5 Years' },
+        { key: '5-10', label: '5-10 Years' },
+        { key: '10+', label: '10+ Years' },
+      ],
+    },
+  },
+  {
     id: 'exampleFilter',
     label: 'Example Filter',
     type: 'SelectSingleFilter',

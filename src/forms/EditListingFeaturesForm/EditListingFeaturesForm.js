@@ -7,7 +7,7 @@ import { FormattedMessage } from '../../util/reactIntl';
 import { findOptionsForSelectFilter } from '../../util/search';
 import { propTypes } from '../../util/types';
 import config from '../../config';
-import { Button, FieldCheckboxGroup, FieldSelect ,Form } from '../../components';
+import { Button, FieldCheckboxGroup, FieldSelect ,Form, FieldRadioButton } from '../../components';
 
 import css from './EditListingFeaturesForm.css';
 
@@ -49,7 +49,11 @@ const EditListingFeaturesFormComponent = props => (
         </p>
       ) : null;
 
-      const options = findOptionsForSelectFilter('salesMedium', filterConfig);
+      const medium = findOptionsForSelectFilter('salesMedium', filterConfig);
+      const experiance = findOptionsForSelectFilter('yearsExperiance', filterConfig);
+
+      
+      
 
       const focusKey = 'industryFocus';
       const focusOptions = findOptionsForSelectFilter( focusKey, filterConfig);
@@ -67,8 +71,17 @@ const EditListingFeaturesFormComponent = props => (
               </option>
             ))}
           </FieldSelect>
+          <FieldSelect className={css.features} id={name} name={name} label={"Years of Experiance"}>
+            {experiance.map(o => (
+              <option key={o.key} value={o.key}> 
+                {o.label}
+              </option>
+            ))}
+          </FieldSelect>
 
-          <FieldCheckboxGroup className={css.features} id={name} name={name} options={options} label="Sales Channels"/>
+          <FieldCheckboxGroup className={css.features} id={name} name={name} options={medium} label="Sales Channels"/>
+            
+          
 
           <Button
             className={css.submitButton}
