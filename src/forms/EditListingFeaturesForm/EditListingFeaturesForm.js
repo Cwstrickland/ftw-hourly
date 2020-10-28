@@ -7,7 +7,7 @@ import { FormattedMessage } from '../../util/reactIntl';
 import { findOptionsForSelectFilter } from '../../util/search';
 import { propTypes } from '../../util/types';
 import config from '../../config';
-import { Button, FieldCheckboxGroup, FieldSelect ,Form, FieldRadioButton } from '../../components';
+import { Button, FieldCheckboxGroup, FieldSelect ,Form } from '../../components';
 
 import css from './EditListingFeaturesForm.css';
 
@@ -50,7 +50,8 @@ const EditListingFeaturesFormComponent = props => (
       ) : null;
 
       const medium = findOptionsForSelectFilter('salesMedium', filterConfig);
-      const experiance = findOptionsForSelectFilter('yearsExperiance', filterConfig);
+      const experiance = 'yearsExperiance';
+      const experianceOptions = findOptionsForSelectFilter( experiance, filterConfig);
 
       
       
@@ -71,8 +72,8 @@ const EditListingFeaturesFormComponent = props => (
               </option>
             ))}
           </FieldSelect>
-          <FieldSelect className={css.features} id={name} name={name} label={"Years of Experiance"}>
-            {experiance.map(o => (
+          <FieldSelect className={css.features} id={experiance} name={experiance} label={"Years of Experiance"}>
+            {experianceOptions.map(o => (
               <option key={o.key} value={o.key}> 
                 {o.label}
               </option>

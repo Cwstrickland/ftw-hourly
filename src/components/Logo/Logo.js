@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import IconLogo from './IconLogo';
 import LogoImage from './DesktopLogo.png';
 import css from './Logo.css';
 
