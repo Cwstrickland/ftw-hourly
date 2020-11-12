@@ -20,7 +20,7 @@ import {
 } from '../../components';
 import { TopbarContainer } from '../../containers';
 
-import facebookImage from '../../assets/yogatimeFacebook-1200x630.jpg';
+import facebookImage from '../../assets/yogatimeFacebook-1200x650.jpg';
 import twitterImage from '../../assets/yogatimeTwitter-600x314.jpg';
 import css from './LandingPage.css';
 
