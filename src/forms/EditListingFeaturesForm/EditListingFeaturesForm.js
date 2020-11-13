@@ -79,7 +79,7 @@ const EditListingFeaturesFormComponent = props => (
             ))}
           </FieldSelect>
 
-          <FieldCheckboxGroup className={css.features} id={medium} name={medium} options={mediumOptions} label="Sales Channels"/>
+          <FieldCheckboxGroup className={css.features} id={medium} name={medium} options={mediumOptions} label={"Sales Channels"}/>
             
           
 
