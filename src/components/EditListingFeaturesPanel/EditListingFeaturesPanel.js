@@ -10,7 +10,7 @@ import { ListingLink } from '../../components';
 
 import css from './EditListingFeaturesPanel.css';
 
-const FEATURES_NAME = 'yogaStyles';
+const FEATURES_NAME = 'specifics'; 
 
 const EditListingFeaturesPanel = props => {
   const {

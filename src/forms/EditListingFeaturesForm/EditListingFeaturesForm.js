@@ -49,12 +49,11 @@ const EditListingFeaturesFormComponent = props => (
         </p>
       ) : null;
 
-      const medium = findOptionsForSelectFilter('salesMedium', filterConfig);
+      const medium = 'salesMedium';
+      const mediumOptions = findOptionsForSelectFilter( medium, filterConfig);
+
       const experiance = 'yearsExperiance';
       const experianceOptions = findOptionsForSelectFilter( experiance, filterConfig);
-
-      
-      
 
       const focusKey = 'industryFocus';
       const focusOptions = findOptionsForSelectFilter( focusKey, filterConfig);
@@ -73,14 +72,14 @@ const EditListingFeaturesFormComponent = props => (
             ))}
           </FieldSelect>
           <FieldSelect className={css.features} id={experiance} name={experiance} label={"Years of Experiance"}>
-            {experianceOptions.map(o => (
-              <option key={o.key} value={o.key}> 
-                {o.label}
+            {experianceOptions.map(l => (
+              <option key={l.key} value={l.key}> 
+                {l.label}
               </option>
             ))}
           </FieldSelect>
 
-          <FieldCheckboxGroup className={css.features} id={name} name={name} options={medium} label="Sales Channels"/>
+          <FieldCheckboxGroup className={css.features} id={medium} name={medium} options={mediumOptions} label="Sales Channels"/>
             
           
 
