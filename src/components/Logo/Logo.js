@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import LogoImage from './DesktopLogo.png';
-import css from './Logo.css';
+import IconLogo from './IconLogo';
+import css from './Logo.module.css';
 
 const Logo = props => {
   const { className, format, ...rest } = props;
