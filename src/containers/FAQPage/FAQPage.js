@@ -8,7 +8,7 @@ import {
   Footer,
 } from '../../components';
 
-import css from './FAQPage.css';
+import css from './FAQPage.module.css';
 
 const FAQPage = () => {
   // prettier-ignore

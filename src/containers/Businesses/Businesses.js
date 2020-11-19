@@ -8,7 +8,7 @@ import {
    Footer,
 } from '../../components';
 
-import css from './Businesses.css';
+import css from './Businesses.module.css';
 
 const Businesses = () => {
    return (

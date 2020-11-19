@@ -8,7 +8,7 @@ import {
    Footer,
 } from '../../components';
 
-import css from './Jaegers.css';
+import css from './Jaegers.module.css';
 
 const Jaegers = () => {
    return (

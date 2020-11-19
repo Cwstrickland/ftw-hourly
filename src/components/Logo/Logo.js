@@ -13,7 +13,7 @@ const Logo = props => {
   return (
     <img
       className={classes}
-      src={LogoImage}
+      src={IconLogo}
       alt="Jaeger Logo"
       {...rest}
     />
