@@ -9,6 +9,7 @@ import {
 } from '../../components';
 
 import css from './Businesses.css';
+import image from './sales-meeting.jpg';
 
 const Businesses = () => {
    return (
@@ -30,6 +31,7 @@ const Businesses = () => {
                <h1>
                   Finding your Jaeger.
                </h1>
+               <img className={css.coverImage} src={image} alt="sales meeting" />
                <div>
                   <p>This is where all the words go. Lot's of them.</p>
                   <p>We should explain to businesses why this is the place to find sales pros, and a breif overview of how it works.</p>
