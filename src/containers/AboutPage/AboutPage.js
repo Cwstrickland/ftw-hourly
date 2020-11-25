@@ -11,8 +11,8 @@ import {
   ExternalLink,
 } from '../../components';
 
-import css from './AboutPage.css';
-import image from './sales laptop reports.jpg';
+import css from './AboutPage.module.css';
+import image from './about-us-1056.jpg';
 
 const AboutPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;

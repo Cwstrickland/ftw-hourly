@@ -18,10 +18,13 @@ exports[`SearchPageComponent matches snapshot 1`] = `
   title="SearchPage.schemaTitle"
 >
   <withRouter(Connect(TopbarContainerComponent))
+    className="topbar"
     currentPage="SearchPage"
     currentSearchParams={Object {}}
   />
-  <div>
+  <div
+    className="container"
+  >
     <MainPanel
       className={null}
       filterConfig={
@@ -83,37 +86,29 @@ exports[`SearchPageComponent matches snapshot 1`] = `
             "config": Object {
               "options": Array [
                 Object {
-                  "key": "ashtanga",
-                  "label": "Ashtanga",
+                  "key": "phone",
+                  "label": "Phone",
                 },
                 Object {
-                  "key": "hatha",
-                  "label": "Hatha",
+                  "key": "email",
+                  "label": "E-Mail",
                 },
                 Object {
-                  "key": "kundalini",
-                  "label": "Kundalini",
+                  "key": "chat",
+                  "label": "Chat",
                 },
                 Object {
-                  "key": "restorative",
-                  "label": "Restorative",
-                },
-                Object {
-                  "key": "vinyasa",
-                  "label": "Vinyasa",
-                },
-                Object {
-                  "key": "yin",
-                  "label": "Yin",
+                  "key": "inPerson",
+                  "label": "In-Person",
                 },
               ],
               "searchMode": "has_all",
             },
-            "group": "secondary",
-            "id": "yogaStyles",
-            "label": "Yoga styles",
+            "group": "primary",
+            "id": "salesMedium",
+            "label": "Medium",
             "queryParamNames": Array [
-              "pub_yogaStyles",
+              "salesMedium",
             ],
             "type": "SelectMultipleFilter",
           },
@@ -121,26 +116,128 @@ exports[`SearchPageComponent matches snapshot 1`] = `
             "config": Object {
               "options": Array [
                 Object {
-                  "hideFromFilters": true,
-                  "hideFromListingInfo": true,
-                  "key": "none",
-                  "label": "None",
+                  "key": "inside",
+                  "label": "Inside sales",
                 },
                 Object {
-                  "key": "200h",
-                  "label": "Registered yoga teacher 200h",
+                  "key": "outside",
+                  "label": "Outside Sales",
                 },
                 Object {
-                  "key": "500h",
-                  "label": "Registered yoga teacher 500h",
+                  "key": "support",
+                  "label": "Sales Support",
+                },
+                Object {
+                  "key": "client",
+                  "label": "Client Services",
+                },
+                Object {
+                  "key": "lead",
+                  "label": "Lead Generation",
+                },
+                Object {
+                  "key": "bisdev",
+                  "label": "Business Dev Managers",
+                },
+                Object {
+                  "key": "account",
+                  "label": "Account Managers",
+                },
+              ],
+              "searchMode": "has_all",
+            },
+            "group": "primary",
+            "id": "salesRole",
+            "label": "Role",
+            "queryParamNames": Array [
+              "salesRole",
+            ],
+            "type": "SelectSingleFilter",
+          },
+          Object {
+            "config": Object {
+              "options": Array [
+                Object {
+                  "key": "retail",
+                  "label": "Retail Sales",
+                },
+                Object {
+                  "key": "b2b",
+                  "label": "Business to Business",
+                },
+                Object {
+                  "key": "b2c",
+                  "label": "Business to Customer",
+                },
+                Object {
+                  "key": "other",
+                  "label": "Other",
+                },
+              ],
+            },
+            "group": "primary",
+            "id": "industryFocus",
+            "label": "Industry Focus",
+            "queryParamNames": Array [
+              "industryFocus",
+            ],
+            "type": "SelectSingleFilter",
+          },
+          Object {
+            "config": Object {
+              "options": Array [
+                Object {
+                  "key": "0-1",
+                  "label": "0-1 Years",
+                },
+                Object {
+                  "key": "2-5",
+                  "label": "2-5 Years",
+                },
+                Object {
+                  "key": "5-10",
+                  "label": "5-10 Years",
+                },
+                Object {
+                  "key": "10+",
+                  "label": "10+ Years",
+                },
+              ],
+            },
+            "group": "primary",
+            "id": "yearsExperiance",
+            "label": "Years Experiance",
+            "queryParamNames": Array [
+              "yearsExperiance",
+            ],
+            "type": "SelectSingleFilter",
+          },
+          Object {
+            "config": Object {
+              "options": Array [
+                Object {
+                  "key": "1",
+                  "label": "Example 1",
+                },
+                Object {
+                  "key": "2",
+                  "label": "Example 2",
+                },
+                Object {
+                  "key": "3",
+                  "label": "Example 3",
+                },
+                Object {
+                  "key": "4",
+                  "label": "Example 4",
                 },
               ],
             },
             "group": "secondary",
-            "id": "certificate",
-            "label": "Certificate",
+            "id": "exampleFilter",
+            "label": "Example Filter",
             "queryParamNames": Array [
-              "pub_certificate",
+              "exampleFilter",
             ],
             "type": "SelectSingleFilter",
           },
@@ -208,13 +305,16 @@ exports[`SearchPageComponent matches snapshot 1`] = `
       urlQueryParams={Object {}}
     />
     <withViewport(ModalInMobileComponent)
+      className="mapPanel"
       id="SearchPage.map"
       isModalOpenOnMobile={false}
       onClose={[Function]}
       onManageDisableScrolling={[Function]}
       showAsModalMaxWidth={768}
     >
-      <div>
+      <div
+        className="mapWrapper"
+      >
         <withRouter(SearchMapComponent)
           activeListingId={null}
           isSearchMapOpenOnMobile={false}
@@ -226,6 +326,7 @@ exports[`SearchPageComponent matches snapshot 1`] = `
           }
           onCloseAsModal={[Function]}
           onMapMoveEnd={[Function]}
+          reusableContainerClassName="map"
         />
       </div>
     </withViewport(ModalInMobileComponent)>

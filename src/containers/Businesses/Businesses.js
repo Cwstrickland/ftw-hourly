@@ -8,10 +8,14 @@ import {
    Footer,
 } from '../../components';
 
+<<<<<<< HEAD
 import css from './Businesses.css';
 import image from './sales-meeting.jpg';
 import image2 from './business-2.jpg';
 import image3 from './guy-on-tablet.jpg';
+=======
+import css from './Businesses.module.css';
+>>>>>>> origin/upstream---v7.0
 
 const Businesses = () => {
    return (
