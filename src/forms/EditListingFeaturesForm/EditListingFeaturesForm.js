@@ -80,9 +80,11 @@ const EditListingFeaturesFormComponent = props => (
           </FieldSelect>
 
           <FieldCheckboxGroup className={css.features} id={medium} name={medium} options={mediumOptions} label={"Sales Channels"}/>
-            
-          
 
+          <p className={css.error2}>  
+            <FormattedMessage id="EditListingFeaturesForm.ensureVerified" />
+          </p>
+          
           <Button
             className={css.submitButton}
             type="submit"
