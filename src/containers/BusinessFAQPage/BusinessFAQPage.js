@@ -13,33 +13,33 @@ import {
   LayoutWrapperTopbar,
   LayoutWrapperFooter,
   Footer,
-  JaegerFAQ,
+  BusinessFAQ,
 } from '../../components';
 import config from '../../config';
 
-import css from './JaegerFAQPage.module.css'; 
+import css from './BusinessFAQPage.module.css'; 
 
-const JaegerFAQPageComponent = props => {
+const BusinessFAQPageComponent = props => {
   const { scrollingDisabled, intl } = props;
 
   const tabs = [
     {
-      text: intl.formatMessage({ id: 'JaegerFAQPage.privacyTabTitle' }),
-      selected: true,
+      text: intl.formatMessage({ id: 'BusinessFAQPage.privacyTabTitle' }),
+      selected: false,
       linkProps: {
         name: 'JaegerFAQPage',
       },
     },
     {
-      text: intl.formatMessage({ id: 'JaegerFAQPage.tosTabTitle' }),
-      selected: false,
+      text: intl.formatMessage({ id: 'BusinessFAQPage.tosTabTitle' }),
+      selected: true,
       linkProps: {
-        name: 'BusinessFAQPage',
+        name: 'BusinessFAQPage', 
       },
     },
   ];
   const siteTitle = config.siteTitle;
-  const schemaTitle = intl.formatMessage({ id: 'JaegerFAQPage.schemaTitle' }, { siteTitle });
+  const schemaTitle = intl.formatMessage({ id: 'BusinessFAQPage.schemaTitle' }, { siteTitle });
   const schema = {
     '@context': 'http://schema.org',
     '@type': 'WebPage',
@@ -49,15 +49,15 @@ const JaegerFAQPageComponent = props => {
     <Page title={schemaTitle} scrollingDisabled={scrollingDisabled} schema={schema}>
       <LayoutSideNavigation>
         <LayoutWrapperTopbar>
-          <TopbarContainer currentPage="JaegerFAQPage" />
+          <TopbarContainer currentPage="BusinessFAQPage" />
         </LayoutWrapperTopbar>
         <LayoutWrapperSideNav tabs={tabs} />
         <LayoutWrapperMain>
           <div className={css.content}>
             <h1 className={css.heading}>
-              <FormattedMessage id="JaegerFAQPage.heading" />
+              <FormattedMessage id="BusinessFAQPage.heading" />
             </h1>
-            <JaegerFAQ />
+            <BusinessFAQ />
           </div>
         </LayoutWrapperMain>
         <LayoutWrapperFooter>
@@ -70,7 +70,7 @@ const JaegerFAQPageComponent = props => {
 
 const { bool } = PropTypes;
 
-JaegerFAQPageComponent.propTypes = {
+BusinessFAQPageComponent.propTypes = {
   scrollingDisabled: bool.isRequired,
 
   // from injectIntl
@@ -83,9 +83,9 @@ const mapStateToProps = state => {
   };
 };
 
-const JaegerFAQPage = compose(
+const BusinessFAQPage = compose(
   connect(mapStateToProps),
   injectIntl
-)(JaegerFAQPageComponent);
+)(BusinessFAQPageComponent);
 
-export default JaegerFAQPage; 
+export default BusinessFAQPage;  

@@ -20,6 +20,7 @@ import {
   PaymentMethodsPage,
   PrivacyPolicyPage,
   JaegerFAQPage,
+  BusinessFAQPage,
   ProfilePage,
   ProfileSettingsPage,
   SearchPage,
@@ -314,6 +315,11 @@ const routeConfiguration = () => {
       name: 'JaegerFAQPage',
       component: props => <JaegerFAQPage {...props} />,
     },
+    {
+      path: '/business-faq',
+      name: 'BusinessFAQPage',
+      component: props => <BusinessFAQPage {...props} />,
+    }, 
     {
       path: '/styleguide',
       name: 'Styleguide',
