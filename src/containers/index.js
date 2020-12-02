@@ -27,4 +27,5 @@ export { default as TransactionPage } from './TransactionPage/TransactionPage';
 export { default as FAQPage } from './FAQPage/FAQPage';
 export { default as Jaegers } from './Jaegers/Jaegers'; 
 export { default as Businesses } from './Businesses/Businesses'; 
+export { default as JaegerFAQPage } from './JaegerFAQPage/JaegerFAQPage';
 

@@ -19,6 +19,7 @@ import {
   StripePayoutPage,
   PaymentMethodsPage,
   PrivacyPolicyPage,
+  JaegerFAQPage,
   ProfilePage,
   ProfileSettingsPage,
   SearchPage,
@@ -307,6 +308,11 @@ const routeConfiguration = () => {
       path: '/privacy-policy',
       name: 'PrivacyPolicyPage',
       component: props => <PrivacyPolicyPage {...props} />,
+    },
+    {
+      path: '/jaeger-faq',
+      name: 'JaegerFAQPage',
+      component: props => <JaegerFAQPage {...props} />,
     },
     {
       path: '/styleguide',
