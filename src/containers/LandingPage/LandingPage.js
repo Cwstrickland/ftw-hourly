@@ -20,8 +20,8 @@ import {
 } from '../../components';
 import { TopbarContainer } from '../../containers';
 
-import facebookImage from '../../assets/jaegercoFBImage.jpg';
-import twitterImage from '../../assets/jaegercoTWImage.jpg';
+import facebookImage from '../../assets/jaegercoFBImage-1200x630.jpg';
+import twitterImage from '../../assets/jaegercoTWImage-600x314.jpg';
 import css from './LandingPage.module.css';
 
 export const LandingPageComponent = props => {
