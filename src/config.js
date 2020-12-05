@@ -95,7 +95,7 @@ const siteTitle = 'The Jaeger Co.';
 // to-do
 
 // Twitter handle is needed in meta tags (twitter:site). Start it with '@' character
-const siteTwitterHandle = '@thejaegerco';
+const siteTwitterHandle = '@thejaegerco'; 
 
 // to-do
 // Instagram page is used in SEO schema (http://schema.org/Organization)
