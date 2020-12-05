@@ -30,7 +30,7 @@ const Jaegers = () => {
             </LayoutWrapperTopbar>
 
             <LayoutWrapperMain className={css.mainWrapper}>
-               <h1>
+               <h1 className={css.headingText}>
                   How to become a Jaeger.
                </h1>
                <img className={css.coverImage} src={image1} alt="sales person at on phone at railing" />

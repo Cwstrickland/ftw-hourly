@@ -11,9 +11,10 @@
       width: calc(100% - 72px);
       margin: 72px auto 36px auto;
    }
+   
 }
 
-h1 {
+.headingText {
    text-align: center;
 }
 
