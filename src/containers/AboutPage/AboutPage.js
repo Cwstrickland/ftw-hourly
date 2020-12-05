@@ -12,7 +12,8 @@ import {
 } from '../../components';
 
 import css from './AboutPage.module.css';
-import image from './about-us-1056.jpg';
+import image from './coffee_guy.jpg';
+import image2 from './chessboard.jpg';
 
 const AboutPage = () => {
   const { siteTwitterHandle, siteFacebookPage } = config;
@@ -57,7 +58,7 @@ const AboutPage = () => {
               <p>
               The greatest cliché that modern business executives say is “people are our greatest asset”. Evidence that saying is just lip service is that as soon as cost savings is implemented in a company, its employee layoffs or pay cuts are their first option. They don’t care about you; only their profits. With The Jaeger Co, we want to change this relationship by opening up an underutilized segment of business opportunities the Jaeger can utilize to take control of their own careers.
               </p>
-
+              <img className={css.coverImage} src={image2} alt="chess board" />
               <h3 className={css.subtitle}>Are you a business looking for a Jaeger?</h3>
 
               <p>

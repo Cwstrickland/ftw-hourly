@@ -2,13 +2,39 @@
 
 .mainWrapper {
    width: calc(100% - 48px);
-   max-width: 720px;
+   max-width: 900px;
    margin: 24px auto;
    line-height: 32px;
 
    @media (--viewportMedium) {
-      max-width: 650px;
+      
       width: calc(100% - 72px);
       margin: 72px auto 36px auto;
    }
 }
+
+h1 {
+   text-align: center;
+}
+
+.coverImage {
+   max-width: 700px;
+   border-radius: 4px;
+   object-fit: cover;
+   margin: 32px auto;
+}
+
+.grid {
+   display: flex;
+}
+
+.block {
+   display: block;
+}
+
+.gridImage {
+   width: 300px;
+   height: 100%;
+   margin: 15px 20px;
+}
+
